@@ -1,29 +1,77 @@
+<!-- CSS Stylesheets with Relative Paths -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>CSS Stylesheets with Relative Paths</title>
+  <style>
+    body {
+      background-color: #efeee7;
+      font-family: "Georgia", Times New Roman, Times, Serif;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333333;
+    }
+    h1 {
+      color: #eeeeee;
+      text-align: center;
+      font-size: 28px;
+      margin:0;
+      padding: 10px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .container {
+      width: 1024px;
+      margin: 0 auto;
+    }
+    #main-bio {
+      float: left;
+      width: 60%;
+      margin-right: 100px;
+      line-height: 150%;
+
+    }
+    #contact-info {
+      float: left;
+      width: 30%;
+      line-height: 150%;
+    }
+    #bio-image {
+      float: left;
+      width: 200px;
+      overflow: hidden;
+    }
+    .red-link {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-	<h1> Student Bio</h1>
-	<h2>Carie Ngo</h2>
-	<br>
-	<img src="http://via.placeholder.com/350x150">
-	<br><br>
+  <header>
+    <h1>Student Bio</h1>
+  </header>
+  <div class="container">
+    <section id="main-bio">
+      <h2>Carie Ngo</h2>
+      <img src="https://placehold.it/200x200" alt="Carie Ngo">
 
-	<p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio earum architecto unde, officia nulla placeat recusandae quia consequuntur in, mollitia aliquid. Quae iure, maiores vitae eaque, laudantium perferendis nihil debitis.</p>
-	<p>Obcaecati natus voluptatibus nesciunt inventore, quos repudiandae ut delectus in? Facilis porro esse ipsam deserunt reiciendis blanditiis dolores, rem beatae ab ipsum adipisci tenetur a vero harum soluta, earum. Magnam.</p>
-	<p>Sint unde sed ut aliquam, quod velit culpa odio adipisci quo dolorum quisquam dolor cupiditate saepe repellendus ad mollitia et repellat, commodi sunt, accusantium tenetur eos obcaecati quia? Cum, magnam.</p>
-	<p>Dolorum porro, cum dicta voluptate, ducimus vitae minus laboriosam accusamus rerum iste commodi praesentium eum blanditiis in itaque explicabo! Ab itaque corrupti voluptatibus nisi dolore dolor eveniet quaerat nemo excepturi.</p>
-	<p>Perspiciatis totam earum libero provident perferendis, recusandae facere, officiis voluptas, harum vel iusto quo autem cumque eos deleniti! Ipsum repellendus, aliquid id possimus nesciunt earum amet adipisci fuga expedita eligendi.</p>
-
-	<br>
-
-	<h2>Contact Info</h2>
-	<ul>
-	<li><strong>Email: </strong><a href="mailto:carie_ngo@yahoo.com">carie_ngo@yahoo.com </a></li>
-	<li><strong>Github: </strong><a href="https://github.com/Moogieee">@moogieee</a></li>
-	<li><strong>Portfolio: </strong><a href="#">coming soon</a></li>
-	</ul>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio earum architecto unde, officia nulla placeat recusandae quia consequuntur in, mollitia aliquid. Quae iure, maiores vitae eaque, laudantium perferendis nihil debitis.</p>
+      <p>Obcaecati natus voluptatibus nesciunt inventore, quos repudiandae ut delectus in? Facilis porro esse ipsam deserunt reiciendis blanditiis dolores, rem beatae ab ipsum adipisci tenetur a vero harum soluta, earum. Magnam.</p>
+      
+    </section>
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email: </strong><a href="mailto:carie_ngo@yahoo.com" class="red-link">carie_ngo@yahoo.com </a></li>
+        <li><strong>Github: </strong><a href="https://github.com/Moogieee" class="red-link">@moogieee</a></li>
+        <li><strong>Portfolio: </strong><a href="#" class="red-link">coming soon</a></li>
+      </ul>
+    </section>
+  </div>
 </body>
 </html>
